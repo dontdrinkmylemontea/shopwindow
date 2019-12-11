@@ -1,23 +1,86 @@
-
-.normal {
-  font-family: Georgia, sans-serif;
-  margin-top: 4em;
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+.banner {
+  width: 232px;
+  height: auto;
+  margin: 59px 12px 69px 41px;
+  display: flex;
+}
+.bannerIcon {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.bannerIcon:hover {
+  animation: rotate 0.4s;
+}
+.bannerText {
+  margin-left: 6px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  padding-top: 18px;
+}
+.goodsBar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.good {
+  width: 30%;
+  height: 160px;
+  margin: 20px 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eee;
+  background-color: #4a525a;
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+.good:hover {
+  box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.15);
+  animation: bigfont 0.2s;
+  background-size: auto;
+  font-size: 24px;
+}
+.title {
+  margin-bottom: 6px;
+}
+.desc {
+  position: absolute;
+  top: 100px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.15);
   text-align: center;
+  margin: 0 6px;
 }
 
-.welcome {
-  height: 512px;
-  background: url(../assets/yay.jpg) no-repeat center 0;
-  background-size: 512px 512px;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
-.list {
-  font-size: 1.2em;
-  margin: 1.8em 0 0;
-  list-style: none;
-  line-height: 1.5em;
-}
-
-.list code {
-  background: #f7f7f7;
+@keyframes bigfont {
+  0% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 24px;
+  }
 }
