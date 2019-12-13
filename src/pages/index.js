@@ -44,6 +44,7 @@ export default function() {
       </div>
       <div className={styles.goodsBar}>
         {goods.map(({ image, title, description }, key) => (
+          // <div key={key} className={styles.good}>
           <div key={key} className={styles.good} style={{ backgroundImage: `url(${image})` }}>
             <div className={styles.title}>{title}</div>
             <div className={styles.desc}>{description}</div>
