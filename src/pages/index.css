@@ -46,9 +46,9 @@
 }
 .good:hover {
   /* box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.15); */
-  animation: bigfont 0.2s;
+  /* animation: bigfont 0.2s; */
   /* background-size: auto; */
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .title {
   margin-bottom: 6px;
