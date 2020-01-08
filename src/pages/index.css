@@ -2,6 +2,10 @@
   font-family: 'Bebas Neue';
   src: url('../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
 }
+.root {
+  color: #eee;
+  font-size: 14px;
+}
 .banner {
   width: 232px;
   height: auto;
@@ -37,31 +41,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #eee;
-  /* color: #383f5c; */
-  background-color: #4a525a;
-  background-size: 80% 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 14px;
-  border-radius: 4px;
 }
-.good:hover {
-  /* box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.15); */
-  color: #fff;
-  /* box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.15); */
-  /* animation: bigfont 0.2s;
-  background-size: auto;
-  font-size: 24px; */
+.active {
+  box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
 }
 .title {
-  margin-bottom: 6px;
+  margin-bottom: 40px;
 }
 .desc {
   position: absolute;
-  top: 90px;
+  top: 70px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
   text-align: center;
   margin: 0 6px;
 }
@@ -78,13 +69,5 @@
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes bigfont {
-  0% {
-    font-size: 20px;
-  }
-  100% {
-    font-size: 24px;
   }
 }
