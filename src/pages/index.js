@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Icon from './components/Icon/Icon';
+import DragableItem from './components/DragableItem/DragableItem';
 import styles from './index.css';
-import hamburger from '../assets/img/hamburger.svg';
 
 const goods = [
   {
@@ -43,9 +44,9 @@ class pageName extends Component {
     return (
       <div className={styles.root}>
         <div className={styles.banner}>
-          <a href="/">
-            <img src={hamburger} alt="icon" className={styles.bannerIcon} />
-          </a>
+          <DragableItem>
+            <Icon type="hamburger" />
+          </DragableItem>
           <div className={styles.bannerText}>Hamburger</div>
         </div>
         <div className={styles.goodsBar}>

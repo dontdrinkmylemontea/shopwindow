@@ -12,14 +12,6 @@
   margin: 59px 12px 69px 41px;
   display: flex;
 }
-.bannerIcon {
-  width: 70px;
-  height: 70px;
-  cursor: pointer;
-}
-.bannerIcon:hover {
-  animation: rotate 0.4s;
-}
 .bannerText {
   margin-left: 6px;
   font-family: 'Bebas Neue', cursive;
@@ -55,19 +47,4 @@
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   margin: 0 6px;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
