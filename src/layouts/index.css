@@ -1,7 +1,7 @@
 .normal {
   font-family: Georgia, sans-serif;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 .box {
   width: 720px;

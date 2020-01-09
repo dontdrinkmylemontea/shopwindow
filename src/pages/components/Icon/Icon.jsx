@@ -5,8 +5,13 @@ class Icon extends Component {
   render() {
     const { type } = this.props;
     return (
-      <div style={{ pointerEvents: 'none' }}>
-        <img src={`/${type}.svg`} alt={type} className={styles.bannerIcon} />
+      <div className={styles.bannerIcon}>
+        <img
+          className={styles.iconImg}
+          style={{ pointerEvents: 'none' }}
+          src={`/${type}.svg`}
+          alt={type}
+        />
       </div>
     );
   }

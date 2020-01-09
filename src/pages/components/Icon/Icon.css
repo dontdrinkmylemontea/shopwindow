@@ -1,10 +1,12 @@
 .bannerIcon {
-  width: 70px;
-  height: 70px;
   cursor: pointer;
 }
 .bannerIcon:hover {
   animation: rotate 0.4s;
+}
+.iconImg {
+  width: 70px;
+  height: 70px;
 }
 
 @keyframes rotate {
