@@ -1,8 +1,9 @@
 .normal {
   font-family: Georgia, sans-serif;
+  min-height: 100vh;
+  height: auto;
 }
 .box {
   width: 720px;
   margin: 0 auto 0 auto;
-  position: relative;
 }

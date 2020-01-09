@@ -9,7 +9,7 @@
 .banner {
   width: 232px;
   height: auto;
-  margin: 59px 12px 69px 41px;
+  padding: 59px 12px 69px 41px;
   display: flex;
 }
 .bannerText {

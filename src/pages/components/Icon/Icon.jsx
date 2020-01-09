@@ -3,11 +3,11 @@ import styles from './Icon.css';
 
 class Icon extends Component {
   render() {
-    const { type, href = '/' } = this.props;
+    const { type } = this.props;
     return (
-      <a href={href}>
+      <div style={{ pointerEvents: 'none' }}>
         <img src={`/${type}.svg`} alt={type} className={styles.bannerIcon} />
-      </a>
+      </div>
     );
   }
 }
