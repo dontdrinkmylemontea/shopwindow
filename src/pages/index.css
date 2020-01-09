@@ -48,3 +48,8 @@
   text-align: center;
   margin: 0 6px;
 }
+.plate {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}

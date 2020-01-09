@@ -42,13 +42,13 @@ class DragableItem extends Component {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, zIndex } = this.props;
     return (
       <div
         ref={this.itemRef}
         onMouseDown={this.dragBegin}
         onMouseUp={this.dragEnd}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', zIndex }}
       >
         {children}
       </div>

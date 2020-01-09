@@ -1,4 +1,6 @@
 .bannerIcon {
+  width: 70px;
+  height: 70px;
   cursor: pointer;
 }
 .bannerIcon:hover {

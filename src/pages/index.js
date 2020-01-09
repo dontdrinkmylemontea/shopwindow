@@ -44,7 +44,7 @@ class pageName extends Component {
     return (
       <div className={styles.root}>
         <div className={styles.banner}>
-          <DragableItem>
+          <DragableItem zIndex={2}>
             <Icon type="hamburger" />
           </DragableItem>
           <div className={styles.bannerText}>Hamburger</div>
@@ -60,6 +60,9 @@ class pageName extends Component {
               <div className={styles.desc}>{description}</div>
             </div>
           ))}
+        </div>
+        <div className={styles.plate}>
+          <Icon type="plate" size={60} />
         </div>
       </div>
     );
