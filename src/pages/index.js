@@ -6,6 +6,7 @@ import styles from './index.css';
 const goods = [
   {
     title: '二分查找',
+    href: 'http://39.108.94.69:8001/',
     description: '比较二分搜索和顺序搜索在前端执行的效率',
   },
   {
@@ -37,7 +38,12 @@ class pageName extends Component {
     currentGood: 0,
   };
 
-  onChangeGood = goodIndex => this.setState({ currentGood: goodIndex });
+  onChangeGood = (goodIndex, href) => {
+    this.setState({ currentGood: goodIndex });
+    if (href) {
+      window.open(href);
+    }
+  };
 
   render() {
     const { currentGood } = this.state;
@@ -50,11 +56,11 @@ class pageName extends Component {
           <div className={styles.bannerText}>Hamburger</div>
         </div>
         <div className={styles.goodsBar}>
-          {goods.map(({ title, description }, key) => (
+          {goods.map(({ title, description, href }, key) => (
             <div
               key={key}
               className={generateStyles({ good: true, active: currentGood === key })}
-              onClick={() => this.onChangeGood(key)}
+              onClick={() => this.onChangeGood(key, href)}
             >
               <div className={styles.title}>{title}</div>
               <div className={styles.desc}>{description}</div>
