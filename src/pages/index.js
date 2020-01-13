@@ -6,11 +6,12 @@ import styles from './index.css';
 const goods = [
   {
     title: '二分查找',
-    href: 'http://39.108.94.69:8001/',
+    href: 'http://39.108.94.69:8001/binarysearch',
     description: '比较二分搜索和顺序搜索在前端执行的效率',
   },
   {
     title: '吸猫处',
+    href: 'http://39.108.94.69:8001/kitten',
     description: 'flex瀑布流，随机猫猫图片',
   },
   {
