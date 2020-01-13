@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { DragedItem } from '../DragAndPut/DragAndPut';
 
 const getRootDom = () => document.getElementById('root');
+
+@DragedItem
 class DragableItem extends Component {
   constructor(props) {
     super(props);
@@ -26,8 +29,10 @@ class DragableItem extends Component {
 
   dragMove = e => {
     const itemDom = this.itemRef.current;
+    const { onDrag } = this.props;
     const { pageX: x, pageY: y } = e;
     let transform = { x: 0, y: 0 };
+    onDrag({ x, y });
     if (this.initPosition) {
       transform = { x: x - this.initPosition.x, y: y - this.initPosition.y };
     } else {

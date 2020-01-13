@@ -2,19 +2,25 @@
   font-family: 'Bebas Neue';
   src: url('../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'MEYICha';
+  src: url('../assets/fonts/MFYiCha_Noncommercial-Regular.ttf/MFYiCha_Noncommercial-Regular.ttf');
+}
 .root {
   color: #eee;
   font-size: 14px;
 }
 .banner {
-  width: 232px;
+  /* width: 232px; */
   height: auto;
   padding: 59px 12px 69px 41px;
   display: flex;
 }
 .bannerText {
   margin-left: 6px;
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: 'MEYICha';
   font-size: 40px;
   padding-top: 18px;
 }
@@ -38,13 +44,14 @@
   box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
 }
 .title {
+  font-weight: bold;
   margin-bottom: 40px;
 }
 .desc {
   position: absolute;
   top: 70px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   margin: 0 6px;
 }

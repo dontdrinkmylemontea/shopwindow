@@ -54,7 +54,7 @@ class pageName extends Component {
           <DragableItem zIndex={2}>
             <Icon type="hamburger" />
           </DragableItem>
-          <div className={styles.bannerText}>Hamburger</div>
+          <div className={styles.bannerText}>作品橱窗</div>
         </div>
         <div className={styles.goodsBar}>
           {goods.map(({ title, description, href }, key) => (
