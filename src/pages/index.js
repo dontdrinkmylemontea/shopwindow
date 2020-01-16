@@ -20,6 +20,11 @@ const goods = [
     description: '四叉树在web前端的应用',
   },
   {
+    title: '试卷',
+    href: 'http://39.108.94.69:8001/examination',
+    description: '考个考试吧？',
+  },
+  {
     title: '字典树',
     description: '字典树在web前端的应用',
   },
